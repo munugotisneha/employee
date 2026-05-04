@@ -1,0 +1,232 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(129, 140, 248, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(6, 182, 212, 0.14), transparent 24%),
+    linear-gradient(135deg, #eef2ff 0%, #f8fafc 45%, #ffffff 100%);
+  font-family: "Segoe UI", sans-serif;
+  color: #334155;
+}
+
+.container {
+  max-width: 1050px;
+  margin: auto;
+  padding-top: 36px;
+  padding-bottom: 48px;
+}
+
+/* headings */
+h1,
+h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+h2 {
+  font-size: 34px;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sub-title {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 22px;
+}
+
+/* form card */
+.form-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 24px 22px;
+  margin-bottom: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow:
+    0 10px 30px rgba(79, 70, 229, 0.08),
+    0 20px 40px rgba(6, 182, 212, 0.05);
+}
+
+/* form row */
+.form-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* inputs */
+.form-control {
+  height: 42px;
+  min-width: 150px;
+  border-radius: 12px !important;
+  border: 1px solid #dbe4ff;
+  background: rgba(255, 255, 255, 0.92);
+  font-size: 14px;
+  padding: 6px 14px;
+  box-shadow: none !important;
+  transition: all 0.22s ease;
+}
+
+.form-control::placeholder {
+  color: #94a3b8;
+}
+
+.form-control:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12) !important;
+  background: #ffffff;
+}
+
+/* buttons */
+.btn {
+  border-radius: 12px !important;
+  font-size: 13px;
+  padding: 8px 16px;
+  font-weight: 600;
+  transition: all 0.18s ease;
+  border: none;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #4f46e5, #06b6d4);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.18);
+}
+
+.btn-warning {
+  background: linear-gradient(90deg, #f59e0b, #f97316);
+  color: white;
+}
+
+.btn-danger {
+  background: linear-gradient(90deg, #ef4444, #f43f5e);
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+/* table wrapper */
+.table-card {
+  margin-top: 22px;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    0 10px 28px rgba(79, 70, 229, 0.06),
+    0 20px 40px rgba(6, 182, 212, 0.04);
+}
+
+/* table title */
+.table-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 18px 0 12px;
+  color: #334155;
+}
+
+/* table */
+.table {
+  margin-bottom: 0;
+  background: transparent;
+}
+
+.table thead th {
+  background: linear-gradient(90deg, #312e81, #0f766e);
+  color: white;
+  border: none;
+  padding: 15px 10px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.table tbody td {
+  padding: 15px 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-color: #eef2ff;
+  font-size: 14px;
+}
+
+.table tbody tr {
+  transition: all 0.18s ease;
+}
+
+.table tbody tr:nth-child(even) {
+  background: rgba(248, 250, 252, 0.7);
+}
+
+.table tbody tr:hover {
+  background: rgba(224, 231, 255, 0.45);
+}
+
+/* employee name */
+.employee-name {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* designation badge */
+.designation-badge {
+  background: linear-gradient(90deg, #06b6d4, #4f46e5);
+  color: white;
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  display: inline-block;
+  font-weight: 600;
+  box-shadow: 0 6px 12px rgba(79, 70, 229, 0.12);
+}
+
+/* salary */
+.salary {
+  color: #059669;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+/* alert */
+.alert {
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  background: linear-gradient(90deg, #dcfce7, #ecfeff);
+  color: #166534;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .table {
+    font-size: 13px;
+  }
+}
